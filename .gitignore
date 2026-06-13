@@ -1,0 +1,11 @@
+# 只發布網站（index.html 與 articles/），其餘不上傳
+源稿/
+build.py
+_移除備份/
+_clean_notes.py
+*.py
+
+# OS / 編輯器雜物
+.DS_Store
+Thumbs.db
+desktop.ini
