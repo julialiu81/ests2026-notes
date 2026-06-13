@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -41,7 +43,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>研究怎麼做？</h2>
 <p>資料來自 <b>EPITHOR</b>（法國胸心血管外科學會 SFCTCV 全國登記），2023–2024。意圖根治手術 18,891 例，其中肺節切除 3,965 例（佔 21%），微創肺節切除 3,484 例（88%）。排除缺病理細節者後，最終 <b>RATS 855 vs VATS 1,269（共 2,124 例）</b>。以 IPTW 加權迴歸校正年齡、性別、BMI、FEV1、抽菸、共病、組織型、機構、肺節切除／肺葉切除比、地區。</p>
 <h2>結果</h2>
-<table><tr><th>指標</th><th>RATS</th><th>VATS</th><th>p 值</th></tr><tr><td>符合腫瘤學建議比例</td><td>81.7%</td><td>81.3%</td><td>NS</td></tr><tr><td>「複雜」肺節切除（JCOG 定義）</td><td>14.1%</td><td>14.2%</td><td>NS</td></tr><tr><td><b>非標準肺節切除</b></td><td><b>51.3%</b></td><td><b>42.6%</b></td><td><b>&lt;0.001</b></td></tr></table>
+<div class="tablewrap"><table><tr><th>指標</th><th>RATS</th><th>VATS</th><th>p 值</th></tr><tr><td>符合腫瘤學建議比例</td><td>81.7%</td><td>81.3%</td><td>NS</td></tr><tr><td>「複雜」肺節切除（JCOG 定義）</td><td>14.1%</td><td>14.2%</td><td>NS</td></tr><tr><td><b>非標準肺節切除</b></td><td><b>51.3%</b></td><td><b>42.6%</b></td><td><b>&lt;0.001</b></td></tr></table></div>
 <ul><li><b>安全性</b>：30 天／90 天死亡率、ICU 入住、Clavien-Dindo ≥3 併發症，兩組相近。<b>主要顯著差異是 RATS 轉換率較低</b>。</li><li><b>腫瘤學</b>：以 ESTS「完整切除」為代替指標，RATS 各項初步較好，但 IPTW 配對後差異不再顯著；2 年整體存活兩組相近。</li></ul>
 <h2>怎麼解讀？</h2>
 <blockquote>結論：法國全國資料顯示意圖性肺節切除已普及、機械手臂平台廣泛可用；VATS 與 RATS 在安全性與腫瘤學結果上相近。有同等平台可用的團隊傾向選 RATS 做肺節切除，尤其是非標準（基底肺節以外）肺節切除。</blockquote>

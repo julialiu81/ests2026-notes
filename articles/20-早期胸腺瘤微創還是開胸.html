@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,13 +41,13 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>胸腺上皮腫瘤（thymic epithelial tumours, TET）的微創手術（MIS）近年越來越多，但一直有腫瘤學上的顧慮：操作空間有限，會不會破壞腫瘤被膜、增加日後復發？由於胸腺瘤少見、死亡多與腫瘤無關，單一中心難以回答。本研究用 <b>ESTS 胸腺資料庫</b>的多中心資料，比較早期 TET 的微創與開胸結果。</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>ESTS 胸腺資料庫多中心回溯，傾向分數配對（PSM）</td></tr><tr><td>納入</td><td>病理 Masaoka–Koga I–II、腫瘤 ≤10 cm、未接受術前治療</td></tr><tr><td>人數</td><td>原始 N=931：<b>微創（MIS）552 vs 開胸（Open）379</b></td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>ESTS 胸腺資料庫多中心回溯，傾向分數配對（PSM）</td></tr><tr><td>納入</td><td>病理 Masaoka–Koga I–II、腫瘤 ≤10 cm、未接受術前治療</td></tr><tr><td>人數</td><td>原始 N=931：<b>微創（MIS）552 vs 開胸（Open）379</b></td></tr></table></div>
 <div class="note"><p>兩組原本就不平衡：開胸組腫瘤明顯較大（術前 6.0 vs 3.6 cm，p&lt;0.001）、胸腺癌比例較高。因此需要傾向分數配對來公平比較。</p></div>
 <h2>結果</h2>
 <p><b>配對前（圍術期）</b></p>
 <ul><li>微創組<b>住院較短（3 vs 5 天）、出血較少</b>。</li><li>R0 完全切除相當（94.3% vs 93.4%）；30 天死亡率相當（0.4% vs 0.5%）。</li></ul>
 <p><b>傾向分數配對後（235 對，最大 SMD 0.092，平衡良好）</b></p>
-<table><tr><th>結果</th><th>配對後比較</th></tr><tr><td>住院天數</td><td>微創<b>仍顯著較短</b></td></tr><tr><td>出血量</td><td>組間差異消失（數值仍偏向微創）</td></tr><tr><td>5 年、10 年 RFS</td><td>兩組相當，無顯著差異</td></tr><tr><td>5 年、10 年 OS</td><td>兩組相當，無顯著差異</td></tr></table>
+<div class="tablewrap"><table><tr><th>結果</th><th>配對後比較</th></tr><tr><td>住院天數</td><td>微創<b>仍顯著較短</b></td></tr><tr><td>出血量</td><td>組間差異消失（數值仍偏向微創）</td></tr><tr><td>5 年、10 年 RFS</td><td>兩組相當，無顯著差異</td></tr><tr><td>5 年、10 年 OS</td><td>兩組相當，無顯著差異</td></tr></table></div>
 <h2>怎麼解讀？</h2>
 <blockquote>Take-home：在 ≤10 cm 的早期 TET，微創手術帶來較快的恢復，且沒有證據顯示腫瘤學結果較差；在嚴守腫瘤學原則（整塊切除、R0、保護被膜）下，是有效且安全的選擇。</blockquote>
 <h2>但要注意這些</h2>

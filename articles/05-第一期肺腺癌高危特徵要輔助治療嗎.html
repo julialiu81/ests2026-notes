@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,14 +41,14 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>完全切除的第 I 期肺腺癌整體預後很好，常規上並不建議術後全身治療。但其中有一群帶有「侵襲性」病理特徵的病人，臨床醫師往往會猶豫：<b>這些高危特徵，是不是就足以作為加做輔助化療或標靶的理由？</b> 本研究就是要直接檢驗這個假設。</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>單中心（華西醫院，高量中心）回溯性世代研究，收案 2017/11–2024/05</td></tr><tr><td>篩選</td><td>5,815 例第 I 期侵襲性肺腺癌根治切除 → 排除高危特徵不確定（1,130）與追蹤缺失（195）→ 合格 4,290 → <b>具 ≥1 項高危特徵者 1,681 人</b>為分析族群</td></tr><tr><td>中位追蹤</td><td>40 個月（IQR 24–57）</td></tr><tr><td>分組</td><td>ACT 組 206 人（12.3%）vs 非 ACT 1,475；ATT 組 249 人（14.8%）vs 非 ATT 1,432</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>單中心（華西醫院，高量中心）回溯性世代研究，收案 2017/11–2024/05</td></tr><tr><td>篩選</td><td>5,815 例第 I 期侵襲性肺腺癌根治切除 → 排除高危特徵不確定（1,130）與追蹤缺失（195）→ 合格 4,290 → <b>具 ≥1 項高危特徵者 1,681 人</b>為分析族群</td></tr><tr><td>中位追蹤</td><td>40 個月（IQR 24–57）</td></tr><tr><td>分組</td><td>ACT 組 206 人（12.3%）vs 非 ACT 1,475；ATT 組 249 人（14.8%）vs 非 ATT 1,432</td></tr></table></div>
 <h3>五項病理高危特徵</h3>
-<table><tr><th>縮寫</th><th>全名</th></tr><tr><td>LVI</td><td>淋巴血管侵犯</td></tr><tr><td>VPI</td><td>臟層肋膜侵犯</td></tr><tr><td>STAS</td><td>腫瘤經氣道擴散</td></tr><tr><td>PD</td><td>低分化</td></tr><tr><td>HHS</td><td>高級別組織學亞型</td></tr></table>
+<div class="tablewrap"><table><tr><th>縮寫</th><th>全名</th></tr><tr><td>LVI</td><td>淋巴血管侵犯</td></tr><tr><td>VPI</td><td>臟層肋膜侵犯</td></tr><tr><td>STAS</td><td>腫瘤經氣道擴散</td></tr><tr><td>PD</td><td>低分化</td></tr><tr><td>HHS</td><td>高級別組織學亞型</td></tr></table></div>
 <div class="note"><p>1,681 人中：1 項 989 人（58.8%）、2 項 399 人（23.7%）、≥3 項 293 人（17.4%），近 41% 帶多重高危特徵。</p></div>
 <h2>結果：化療、標靶未見顯著好處</h2>
-<table><tr><th>比較</th><th>5 年 DFS</th><th>5 年 OS</th></tr><tr><td>ACT vs 非 ACT</td><td>84.1% vs 86.8%（HR 0.785，p=0.115）</td><td>95.5% vs 93.5%（HR 0.585，p=0.474）</td></tr><tr><td>ATT vs 非 ATT</td><td>74.0% vs 87.0%（HR 0.803，p=0.774）</td><td>91.1% vs 93.9%（HR 0.843，p=0.945）</td></tr></table>
+<div class="tablewrap"><table><tr><th>比較</th><th>5 年 DFS</th><th>5 年 OS</th></tr><tr><td>ACT vs 非 ACT</td><td>84.1% vs 86.8%（HR 0.785，p=0.115）</td><td>95.5% vs 93.5%（HR 0.585，p=0.474）</td></tr><tr><td>ATT vs 非 ATT</td><td>74.0% vs 87.0%（HR 0.803，p=0.774）</td><td>91.1% vs 93.9%（HR 0.843，p=0.945）</td></tr></table></div>
 <p>不論 Stage IA／IB、亞肺葉切除或肺葉切除等亞組，ACT 或 ATT 均無統計顯著的 DFS／OS 優勢。<b>按高危特徵數目分層</b>也一樣：</p>
-<table><tr><th>高危負荷</th><th>ACT → DFS</th><th>ATT → DFS</th></tr><tr><td>1 項</td><td>HR 1.280（p=0.640）</td><td>HR 0.742（p=0.650）</td></tr><tr><td>2 項</td><td>HR 1.116（p=0.867）</td><td>HR 1.279（p=0.403）</td></tr><tr><td>≥3 項</td><td>HR 0.604（p=0.189）</td><td>HR 0.540（p=0.307）</td></tr></table>
+<div class="tablewrap"><table><tr><th>高危負荷</th><th>ACT → DFS</th><th>ATT → DFS</th></tr><tr><td>1 項</td><td>HR 1.280（p=0.640）</td><td>HR 0.742（p=0.650）</td></tr><tr><td>2 項</td><td>HR 1.116（p=0.867）</td><td>HR 1.279（p=0.403）</td></tr><tr><td>≥3 項</td><td>HR 0.604（p=0.189）</td><td>HR 0.540（p=0.307）</td></tr></table></div>
 <div class="note"><p>任何高危負荷層的 DFS 都沒有達到顯著差異；OS 欄亦未達顯著（最低為 ≥3 項 ACT→OS，p=0.086）。</p></div>
 <h2>怎麼解讀？臨床意義</h2>
 <blockquote>講者結論：病理高危特徵單獨恐不足以篩選術後全身治療的病人；未來需整合病理與分子狀態（如 EGFR、STAS）等多維度資訊。</blockquote>

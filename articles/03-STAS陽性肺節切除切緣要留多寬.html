@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,10 +41,10 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>腫瘤經氣道擴散（STAS）是已知的不良預後因子，與局部及遠端復發、較差存活相關。問題在於：STAS 陽性的病人若做<b>肺節切除</b>，是否會因為切除範圍較小而較不利？講者團隊先前的研究顯示 STAS 陽性者肺節切除 RFS 劣於肺葉切除，且切緣 ≥20 mm 時復發可降低。本研究進一步問：<b>切緣 ≥20 mm 是否能讓肺節切除接近肺葉切除的結果？</b></p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>國際多中心回溯研究（中國、丹麥、義大利、西班牙、台灣等），FACT-MIMICS 框架</td></tr><tr><td>納入</td><td>STAS 陽性、臨床分期 IA1–IA2 NSCLC，手術 2019/01–2022/12</td></tr><tr><td>人數</td><td><b>N=707</b>：肺葉切除 505 vs 肺節切除 202</td></tr><tr><td>主要終點</td><td>無復發存活（RFS），<b>以切緣 20 mm 為臨界值分層</b>；以 sIPTW 平衡術前特徵</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>國際多中心回溯研究（中國、丹麥、義大利、西班牙、台灣等），FACT-MIMICS 框架</td></tr><tr><td>納入</td><td>STAS 陽性、臨床分期 IA1–IA2 NSCLC，手術 2019/01–2022/12</td></tr><tr><td>人數</td><td><b>N=707</b>：肺葉切除 505 vs 肺節切除 202</td></tr><tr><td>主要終點</td><td>無復發存活（RFS），<b>以切緣 20 mm 為臨界值分層</b>；以 sIPTW 平衡術前特徵</td></tr></table></div>
 <div class="note"><p>肺節切除組切緣中位數 20 mm（IQR 10–25），其中 ≥20 mm 者 86 例（42.6%）。肺節切除組較年長、腫瘤較小、較多非純實性。</p></div>
 <h2>結果：20 mm 是分水嶺</h2>
-<table><tr><th>比較</th><th>5 年 RFS</th><th>log-rank p</th></tr><tr><td>肺節切除 切緣 ≥20 mm vs 肺葉切除</td><td>84.0% vs 75.2%</td><td>0.141（無差異）</td></tr><tr><td>肺節切除 切緣 &lt;20 mm vs 肺葉切除</td><td>66.5% vs 75.2%</td><td><b>0.049（結果較不利）</b></td></tr></table>
+<div class="tablewrap"><table><tr><th>比較</th><th>5 年 RFS</th><th>log-rank p</th></tr><tr><td>肺節切除 切緣 ≥20 mm vs 肺葉切除</td><td>84.0% vs 75.2%</td><td>0.141（無差異）</td></tr><tr><td>肺節切除 切緣 &lt;20 mm vs 肺葉切除</td><td>66.5% vs 75.2%</td><td><b>0.049（結果較不利）</b></td></tr></table></div>
 <ul><li>切緣 ≥20 mm 的肺節切除：RFS 與肺葉切除相當（HR 0.68，95% CI 0.40–1.14，p=0.144）。</li><li>切緣 &lt;20 mm 的肺節切除：RFS 較不利（HR 1.55，95% CI 1.00–2.39；log-rank p=0.049、多變量 Cox p=0.051 為邊際顯著）。</li><li>復發類型：切緣 &lt;20 mm 組局部／區域復發 24.4% vs ≥20 mm 組 12.5%；遠端復發兩組相當。</li></ul>
 <h2>怎麼解讀？臨床意義</h2>
 <blockquote>Take-home：STAS 陽性 cIA1-2 NSCLC 做肺節切除時，切緣 ≥20 mm 的 RFS 與肺葉切除相近；&lt;20 mm 則結果較不利。爭取 ≥20 mm 切緣可能有助維持腫瘤學充分性，必要時可考慮延伸肺節或追加楔形切除。</blockquote>

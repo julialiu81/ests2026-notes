@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -44,7 +46,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h3>肺功能：電刀較佳</h3>
 <p>以「FVC 下降 ≥20%」為結果的多變量分析中，<b>釘合器（相對電刀）OR 8.86（1.05–75.21），p=0.0455</b>，也就是釘合器較易造成肺功能明顯下降（電刀保留肺功能較佳）。但講者也提醒此結果事件數很少，需謹慎。</p>
 <h3>腫瘤學：釘合器結果較佳</h3>
-<table><tr><th>指標</th><th>電刀（n=64）</th><th>釘合器（n=199）</th><th>p 值</th></tr><tr><td>手術切緣（mm，中位）</td><td>20（10–30）</td><td><b>25（20–32）</b></td><td>0.0002</td></tr><tr><td>全部復發</td><td>20.3%</td><td><b>9.0%</b></td><td>0.0213</td></tr><tr><td>局部復發</td><td>18.8%</td><td><b>7.0%</b></td><td>0.0137</td></tr><tr><td>遠處復發</td><td>4.7%</td><td>4.5%</td><td>0.7185</td></tr></table>
+<div class="tablewrap"><table><tr><th>指標</th><th>電刀（n=64）</th><th>釘合器（n=199）</th><th>p 值</th></tr><tr><td>手術切緣（mm，中位）</td><td>20（10–30）</td><td><b>25（20–32）</b></td><td>0.0002</td></tr><tr><td>全部復發</td><td>20.3%</td><td><b>9.0%</b></td><td>0.0213</td></tr><tr><td>局部復發</td><td>18.8%</td><td><b>7.0%</b></td><td>0.0137</td></tr><tr><td>遠處復發</td><td>4.7%</td><td>4.5%</td><td>0.7185</td></tr></table></div>
 <h3>存活：兩組相當</h3>
 <p>5 年 OS：電刀 93.7% vs 釘合器 95.9%（HR 0.969，p=0.95）。5 年 RFS：82.5% vs 90.9%（HR 0.595，p=0.106，釘合器趨勢較佳但未達顯著）。多變量 Cox 顯示<b>電刀（相對釘合器）與較差 RFS 獨立相關（HR 2.90，p=0.0025）</b>；實性成分 ≥1 cm 也是明顯不良因子（HR 11.34）。</p>
 <h2>怎麼解讀？</h2>

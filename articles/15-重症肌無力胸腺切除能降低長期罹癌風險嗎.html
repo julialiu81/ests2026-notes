@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,10 +41,10 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>胸腺切除（thymectomy）治療重症肌無力的角色已有隨機試驗支持。但胸腺是免疫器官，切掉它對「長期」的免疫相關後果（會不會更容易、或更不容易得其他自體免疫病或癌症？）一直不清楚。這份研究就想看：切除胸腺的 MG 病人，長期下來這兩類事件的風險有沒有不同。</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>多中心回溯世代（Providence Health Care System，美西），2000–2024</td></tr><tr><td>對象</td><td>血清陽性（AChR/MuSK 抗體陽性）MG；原 865 人 → 最終 <b>n=571</b></td></tr><tr><td>分組</td><td>藥物治療組 320 vs 胸腺切除組 251；中位追蹤約 8 年</td></tr><tr><td>統計</td><td>Fine–Gray 競爭風險模型，校正年齡、既往自體免疫病、既往癌症</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>多中心回溯世代（Providence Health Care System，美西），2000–2024</td></tr><tr><td>對象</td><td>血清陽性（AChR/MuSK 抗體陽性）MG；原 865 人 → 最終 <b>n=571</b></td></tr><tr><td>分組</td><td>藥物治療組 320 vs 胸腺切除組 251；中位追蹤約 8 年</td></tr><tr><td>統計</td><td>Fine–Gray 競爭風險模型，校正年齡、既往自體免疫病、既往癌症</td></tr></table></div>
 <blockquote>⚠️ 重要前提：兩組基準值差很多，胸腺切除組明顯較<b>年輕</b>（診斷中位 49 vs 67 歲）、女性較多、共病較少、術前惡性病史較少。年齡是最大的干擾因子。</blockquote>
 <h2>結果</h2>
-<table><tr><th>結果</th><th>胸腺切除組</th><th>藥物治療組</th><th>校正後</th></tr><tr><td>新發自體免疫病（5 年累積）</td><td>8.9%</td><td>23.7%</td><td>HR 0.26（0.16–0.41），p&lt;0.0001</td></tr><tr><td>新發原發惡性腫瘤（5 年累積）</td><td>3.1%</td><td>12.5%</td><td>HR 0.47（0.23–0.96），p=0.04</td></tr></table>
+<div class="tablewrap"><table><tr><th>結果</th><th>胸腺切除組</th><th>藥物治療組</th><th>校正後</th></tr><tr><td>新發自體免疫病（5 年累積）</td><td>8.9%</td><td>23.7%</td><td>HR 0.26（0.16–0.41），p&lt;0.0001</td></tr><tr><td>新發原發惡性腫瘤（5 年累積）</td><td>3.1%</td><td>12.5%</td><td>HR 0.47（0.23–0.96），p=0.04</td></tr></table></div>
 <div class="note"><p>最常見的新發自體免疫病兩組皆為類風濕性關節炎。既往自體免疫病是新發 AID 的最強危險因子（HR 2.31）。皮膚非黑色素瘤癌（NMSC）已刻意排除，黑色素瘤則納入。</p></div>
 <h2>怎麼解讀？</h2>
 <p>即使校正了年齡等因子，胸腺切除仍與較低的長期自體免疫病與惡性腫瘤風險相關。講者強調：<b>兩組最主要的差異是年齡</b>（藥物組較老、本就更容易隨時間發展新病），但校正後關聯依然顯著存在。</p>

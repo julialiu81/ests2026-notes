@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -42,7 +44,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <p>單中心回溯（首爾峨山醫院，2011–2021）。10,188 筆肺癌手術 → 篩出第 I 期肺腺癌亞肺葉切除者 → 排除 pNx 與 pN 陽性 → <b>分析 n=1,298</b>：N1+N2 組 1,226 vs N2-only 組 72。</p>
 <div class="note"><p>兩組基準值差異大（混淆因子）：N2-only 組較年長、肺功能較差、楔形切除比例遠高（80.6% vs 38.3%）、評估淋巴結數較少（9.3 vs 18.0 顆）。因此分析以 IPTW 校正術式偏差（SMD 由 0.952 降到 0.059）。</p></div>
 <h2>結果</h2>
-<table><tr><th>分析</th><th>結果</th></tr><tr><td>未校正 OS／RFS</td><td>N1+N2 較 N2-only 為佳（OS p=0.003、RFS p&lt;0.001）</td></tr><tr><td>IPTW 校正後</td><td>仍顯著（OS p=0.003、RFS p&lt;0.001）</td></tr><tr><td>CTR &lt;0.5（毛玻璃為主）</td><td>差異不顯著（OS p=0.8、RFS p=0.5）</td></tr><tr><td>CTR ≥0.5（實質為主）</td><td>N1+N2 優勢明顯（OS、RFS 均 p&lt;0.001）</td></tr></table>
+<div class="tablewrap"><table><tr><th>分析</th><th>結果</th></tr><tr><td>未校正 OS／RFS</td><td>N1+N2 較 N2-only 為佳（OS p=0.003、RFS p&lt;0.001）</td></tr><tr><td>IPTW 校正後</td><td>仍顯著（OS p=0.003、RFS p&lt;0.001）</td></tr><tr><td>CTR &lt;0.5（毛玻璃為主）</td><td>差異不顯著（OS p=0.8、RFS p=0.5）</td></tr><tr><td>CTR ≥0.5（實質為主）</td><td>N1+N2 優勢明顯（OS、RFS 均 p&lt;0.001）</td></tr></table></div>
 <p><b>N1 站數的獨立價值</b>：評估 ≥2 個 N1 站 vs ≤1 站，全族群 OS（p=0.002）、RFS（p=0.001）更佳；CTR ≥0.5 亞群更顯著。多變量森林圖：≥2 個 N1 站 → RFS 改善 HR 0.67（0.46–0.97，p=0.03）；CTR ≥0.5 → RFS 較差 HR 3.49（2.15–5.68，p&lt;0.001）。</p>
 <h2>怎麼解讀？</h2>
 <p>講者認為 N1+N2 整合評估的效益來自<b>診斷價值</b>（找出微轉移）與<b>治療價值</b>（切斷淋巴引流）雙重機制，只看 N2 的「N0」不一定是真 N0，可能漏掉 N1 微轉移。討論者 Pascal Thomas 強調：「不只是切緣，淋巴結廓清才是完全切除的共同分母」，在肺節切除中尤其重要。</p>

@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,10 +41,10 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>對選擇性的寡轉移 NSCLC，把所有病灶都「局部消融乾淨」（local consolidative therapy, LCT）已有研究支持其相較單純全身治療的效益。但過去的試驗把手術、SBRT、放化療全歸成同一個「局部鞏固」治療臂，<b>並沒有把「原發腫瘤」用哪種方式處理分開來看</b>。這份研究專門比較：原發腫瘤用手術切，還是用非手術消融？</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>前瞻性登錄（2018–2023），318 例 → 210 例同步寡轉移 NSCLC（M1b/c，≤5 轉移、≤3 器官）</td></tr><tr><td>配對</td><td>1:1 傾向分數配對（PSM），<b>各 71 例</b>；caliper 0.2、SMD &lt;0.10，平衡良好</td></tr><tr><td>手術組</td><td>肺葉切除 68%、肺節切除 32%；VATS 55%；系統性淋巴結廓清 94%</td></tr><tr><td>非手術組</td><td>SBRT alone 74%、確定性同步放化療 26%；原發中位 BED₁₀ 105 Gy</td></tr><tr><td>終點</td><td>主要：3 年 OS、原發腫瘤局部控制；次要：PFS、併發症、失敗模式。中位追蹤 32 個月</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>前瞻性登錄（2018–2023），318 例 → 210 例同步寡轉移 NSCLC（M1b/c，≤5 轉移、≤3 器官）</td></tr><tr><td>配對</td><td>1:1 傾向分數配對（PSM），<b>各 71 例</b>；caliper 0.2、SMD &lt;0.10，平衡良好</td></tr><tr><td>手術組</td><td>肺葉切除 68%、肺節切除 32%；VATS 55%；系統性淋巴結廓清 94%</td></tr><tr><td>非手術組</td><td>SBRT alone 74%、確定性同步放化療 26%；原發中位 BED₁₀ 105 Gy</td></tr><tr><td>終點</td><td>主要：3 年 OS、原發腫瘤局部控制；次要：PFS、併發症、失敗模式。中位追蹤 32 個月</td></tr></table></div>
 <div class="note"><p>兩組現代全身治療（免疫＋標靶＋鉑類）均衡，所有轉移灶都接受消融。</p></div>
 <h2>結果：手術組數值較佳</h2>
-<table><tr><th>結果</th><th>手術組</th><th>非手術組</th><th>統計</th></tr><tr><td>3 年 OS</td><td><b>58%</b></td><td>42%</td><td>HR 0.62（0.40–0.96），p=0.039</td></tr><tr><td>中位 OS</td><td><b>34 個月</b></td><td>24 個月</td><td>校正後 HR 0.62，p=0.032</td></tr><tr><td>3 年原發局部控制</td><td><b>92%</b></td><td>77%</td><td>p=0.008</td></tr><tr><td>局部區域失敗</td><td>8.5%</td><td>25.4%</td><td>非手術為 3 倍</td></tr><tr><td>中位 PFS</td><td><b>28 個月</b></td><td>19 個月</td><td>HR 0.58，p=0.018</td></tr><tr><td>主要併發症（CD ≥3）</td><td>25%</td><td>11%</td><td>p=0.03</td></tr></table>
+<div class="tablewrap"><table><tr><th>結果</th><th>手術組</th><th>非手術組</th><th>統計</th></tr><tr><td>3 年 OS</td><td><b>58%</b></td><td>42%</td><td>HR 0.62（0.40–0.96），p=0.039</td></tr><tr><td>中位 OS</td><td><b>34 個月</b></td><td>24 個月</td><td>校正後 HR 0.62，p=0.032</td></tr><tr><td>3 年原發局部控制</td><td><b>92%</b></td><td>77%</td><td>p=0.008</td></tr><tr><td>局部區域失敗</td><td>8.5%</td><td>25.4%</td><td>非手術為 3 倍</td></tr><tr><td>中位 PFS</td><td><b>28 個月</b></td><td>19 個月</td><td>HR 0.58，p=0.018</td></tr><tr><td>主要併發症（CD ≥3）</td><td>25%</td><td>11%</td><td>p=0.03</td></tr></table></div>
 <div class="note"><p>遠處進展兩組相當（51% vs 55%），手術相關死亡率 2.8%。作者解讀：兩組「遠端腫瘤生物學相等」，OS 差距主要來自<b>胸腔局部控制</b>的優劣。</p></div>
 <h2>臨床框架建議</h2>
 <p>作者建議同步寡轉移 NSCLC 可<b>在第一次治療前就 MDT 討論</b>：可切除且體能允許 → 考慮解剖切除＋系統淋巴結廓清；不可切除／高風險／病人偏好 → SBRT 或放化療；所有路徑都加上轉移灶消融與現代全身治療。</p>

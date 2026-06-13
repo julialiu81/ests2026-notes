@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,11 +41,11 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>JCOG0802 與 CALGB/Alliance 支持肺節切除對周邊型 cT1ab N0 的非劣性。但<b>臟層肋膜侵犯（VPI）</b>是公認的惡性特徵：≤3 cm 腫瘤一旦有 VPI（PL1/PL2）就升期成 pT2a／第 IB 期，與更強侵襲性、淋巴擴散與較差預後相關。對這群人，亞肺葉切除是否安全仍有爭議。麻煩的是，<b>VPI 多半是術後病理才意外發現，術前難以預測</b>。</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>單中心回溯（CHUV 前瞻資料庫），2014–2023</td></tr><tr><td>納入</td><td>病理 pT2aN0M0、VPI（PL1/PL2）、≤3 cm，解剖切除＋系統淋巴結廓清</td></tr><tr><td>人數</td><td><b>n=92</b>：肺葉切除 48 vs 肺節切除 44</td></tr><tr><td>追蹤</td><td>中位 39 個月</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>單中心回溯（CHUV 前瞻資料庫），2014–2023</td></tr><tr><td>納入</td><td>病理 pT2aN0M0、VPI（PL1/PL2）、≤3 cm，解剖切除＋系統淋巴結廓清</td></tr><tr><td>人數</td><td><b>n=92</b>：肺葉切除 48 vs 肺節切除 44</td></tr><tr><td>追蹤</td><td>中位 39 個月</td></tr></table></div>
 <div class="note"><p>肺節切除組術前條件較差：肺功能較差（FEV1 65.5% vs 91.4%，p=0.001）、ASA III 較多、共病較多。廓清淋巴結反而更多（13 vs 9 顆），輔助治療比例兩組相當（40% vs 41%）。VPI 多為術後意外發現，故不存在「因預知 VPI 才選肺節」的偏差。</p></div>
 <h2>結果</h2>
-<table><tr><th>圍術期</th><th>肺節切除</th><th>肺葉切除</th><th>p 值</th></tr><tr><td>手術時間（分鐘）</td><td>130</td><td>146</td><td>0.034</td></tr><tr><td>引流管（天，中位）</td><td>2</td><td>3</td><td>0.031</td></tr><tr><td>持續漏氣 &gt;5 天</td><td>16%</td><td>31%</td><td>0.094（趨勢）</td></tr><tr><td>30 天死亡</td><td>2%（1/44）</td><td>0</td><td>NS</td></tr></table>
-<table><tr><th>腫瘤學（中位追蹤 39 個月）</th><th>結果</th></tr><tr><td>整體復發率</td><td>27%，以遠端復發為主；局部復發僅 1 例（在肺葉切除組）</td></tr><tr><td>3 年 DFS</td><td>兩組相當（p=0.12，NS）</td></tr><tr><td>整體存活 OS</td><td>兩組無顯著差異（即使肺節切除組更脆弱）</td></tr></table>
+<div class="tablewrap"><table><tr><th>圍術期</th><th>肺節切除</th><th>肺葉切除</th><th>p 值</th></tr><tr><td>手術時間（分鐘）</td><td>130</td><td>146</td><td>0.034</td></tr><tr><td>引流管（天，中位）</td><td>2</td><td>3</td><td>0.031</td></tr><tr><td>持續漏氣 &gt;5 天</td><td>16%</td><td>31%</td><td>0.094（趨勢）</td></tr><tr><td>30 天死亡</td><td>2%（1/44）</td><td>0</td><td>NS</td></tr></table></div>
+<div class="tablewrap"><table><tr><th>腫瘤學（中位追蹤 39 個月）</th><th>結果</th></tr><tr><td>整體復發率</td><td>27%，以遠端復發為主；局部復發僅 1 例（在肺葉切除組）</td></tr><tr><td>3 年 DFS</td><td>兩組相當（p=0.12，NS）</td></tr><tr><td>整體存活 OS</td><td>兩組無顯著差異（即使肺節切除組更脆弱）</td></tr></table></div>
 <div class="note"><p>肺節切除組多發現 8 例異時性肺癌，講者視為「保留肺實質有利於高風險異時性肺癌族群」的正面意義。</p></div>
 <h2>怎麼解讀？</h2>
 <blockquote>Take-home：在 pT2aN0M0（VPI，≤3 cm）第 IB 期 NSCLC，本研究中肺節切除 DFS 與 OS 與肺葉切除相近，未觀察到復發風險明顯增加，且圍術期負擔較低（手術較短、引流管較早拔）；支持把 VPI 陽性病人納入肺節切除適應症討論，偶發 VPI 不宜自動視為需要轉肺葉切除。</blockquote>

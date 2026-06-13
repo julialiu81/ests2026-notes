@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -41,7 +43,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>研究怎麼做？</h2>
 <p>單中心回溯（日本 Ibaraki Prefectural Central Hospital，2014–2024）。1,321 例 → 排除不完全切除／pStage IV／前癌史不明 → <b>n=1,267</b>：前癌史陽性 183 vs 陰性 1,083，以 1:2 傾向分數配對（PSM）。</p>
 <h2>結果</h2>
-<table><tr><th>結果指標（PSM 配對後）</th><th>前癌（−）</th><th>前癌（＋）</th><th>p 值</th></tr><tr><td>5 年整體存活（OS）</td><td>83.1%</td><td>73.6%</td><td>0.009</td></tr><tr><td>5 年肺癌特異性存活（LCSS）</td><td>91.3%</td><td>85.3%</td><td>0.045</td></tr></table>
+<div class="tablewrap"><table><tr><th>結果指標（PSM 配對後）</th><th>前癌（−）</th><th>前癌（＋）</th><th>p 值</th></tr><tr><td>5 年整體存活（OS）</td><td>83.1%</td><td>73.6%</td><td>0.009</td></tr><tr><td>5 年肺癌特異性存活（LCSS）</td><td>91.3%</td><td>85.3%</td><td>0.045</td></tr></table></div>
 <p>多變量 Cox（LCSS 獨立危險因子）：<b>前癌史 HR 1.85（1.07–3.48），p=0.039</b>；病理 III 期 HR 6.69；小細胞肺癌 HR 6.20。</p>
 <p><b>前癌期別的影響</b>：早期 vs 晚期前癌（PSM 54 vs 54），5 年 OS 76.9% vs 63.5%（p=0.770）、LCSS 82.7% vs 87.3%（p=0.181），<b>前癌「期別」對術後存活沒有顯著影響</b>。前癌類型以結腸癌（22.3%）最多，其次上消化道、泌尿、攝護腺、頭頸癌。</p>
 <h2>怎麼解讀？</h2>

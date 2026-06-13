@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -40,7 +42,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <p>早期非小細胞肺癌（NSCLC）的根治選項，已不只手術，還包括放射治療與同步化學放射治療。病人能不能承受這些治療，取決於心肺儲備、共病、衰弱與營養等多重因素。2009 年的舊版評估指引已不敷使用，因此 <b>ERS（歐洲呼吸學會）與 ESTS（歐洲胸腔外科醫學會）</b>聯手、並獲 ESTRO、IASLC、ESAIC 背書，集結 48 位作者、納入病患代表，以 GRADE 方法與「證據到決策（EtD）」框架，制定出這份 2025 年新指引（所有建議須達 &gt;90% 共識）。</p>
 <h2>重點一：DLCO 要對「所有人」測，不只肺功能差的人</h2>
 <p>指引<b>強建議</b>術前常規測量一氧化碳肺瀰散量（DLCO），作為術後死亡率／併發症風險評估與追蹤基準值。重要提醒：<b>約 40% FEV1 正常的病人，DLCO 其實異常</b>，所以不能只在 COPD 或 FEV1 偏低者才測。</p>
-<table><tr><th>DLCO（％預測值）</th><th>分類</th><th>臨床意義</th></tr><tr><td>≥80%</td><td>正常</td><td>正常術前風險</td></tr><tr><td>60–79%</td><td>輕度</td><td>風險輕度升高</td></tr><tr><td>40–59%</td><td>中度</td><td>風險中度升高</td></tr><tr><td>&lt;40%</td><td>高</td><td>術後死亡／併發症顯著升高</td></tr></table>
+<div class="tablewrap"><table><tr><th>DLCO（％預測值）</th><th>分類</th><th>臨床意義</th></tr><tr><td>≥80%</td><td>正常</td><td>正常術前風險</td></tr><tr><td>60–79%</td><td>輕度</td><td>風險輕度升高</td></tr><tr><td>40–59%</td><td>中度</td><td>風險中度升高</td></tr><tr><td>&lt;40%</td><td>高</td><td>術後死亡／併發症顯著升高</td></tr></table></div>
 <div class="note"><p>此四分類依據一項納入 13,376 例的多中心研究，DLCO 分類與 30 天死亡率及心肺併發症呈遞增關係。放療前 DLCO 偏低也與放射性肺炎風險增加、存活縮短相關。</p></div>
 <h2>重點二：新輔助治療「打完」要重測肺功能</h2>
 <p>新輔助化學免疫治療雖能讓腫瘤縮小，卻會傷害肺實質。指引建議手術前重測 FEV1 與 DLCO。文獻一致顯示治療後 DLCO 平均下降約 <b>10–15%</b>。</p>
@@ -48,12 +50,12 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <div class="note"><p>啟示：只看 FEV1 會錯過真正的損傷，DLCO 才抓得到。</p></div>
 <h2>重點三：先用「低科技運動測試」分流，再決定要不要 CPET</h2>
 <p>不一定一開始就做昂貴的心肺運動測試（CPET）。指引建議先用爬階、步行等低科技測試篩選，表現不佳者再轉介 CPET。</p>
-<table><tr><th>測試</th><th>閾值</th><th>提示</th></tr><tr><td>爬階測試</td><td>&lt;10 m</td><td>高風險，建議 CPET</td></tr><tr><td>穿梭步行測試（SWT）</td><td>&lt;400 m</td><td>心肺併發症增加</td></tr><tr><td>六分鐘步行（6MWT）</td><td>&lt;400 m</td><td>術後併發症相關</td></tr><tr><td>六分鐘步行（6MWT）</td><td>&lt;250 m</td><td>心肺併發症率可達 45%（單篇研究數據，非指引正式門檻）</td></tr></table>
+<div class="tablewrap"><table><tr><th>測試</th><th>閾值</th><th>提示</th></tr><tr><td>爬階測試</td><td>&lt;10 m</td><td>高風險，建議 CPET</td></tr><tr><td>穿梭步行測試（SWT）</td><td>&lt;400 m</td><td>心肺併發症增加</td></tr><tr><td>六分鐘步行（6MWT）</td><td>&lt;400 m</td><td>術後併發症相關</td></tr><tr><td>六分鐘步行（6MWT）</td><td>&lt;250 m</td><td>心肺併發症率可達 45%（單篇研究數據，非指引正式門檻）</td></tr></table></div>
 <h3>CPET 的角色（含新指標 VE/VCO₂ slope）</h3>
-<table><tr><th>風險</th><th>CPET 閾值</th></tr><tr><td>低</td><td>VO₂peak ≥15 mL/kg/min <b>且</b> VE/VCO₂ &lt;35</td></tr><tr><td>中</td><td>VO₂peak 12–15 <b>或</b> VE/VCO₂ 35–40</td></tr><tr><td>高</td><td>VO₂peak &lt;12 <b>或</b> VE/VCO₂ slope &gt;40</td></tr></table>
+<div class="tablewrap"><table><tr><th>風險</th><th>CPET 閾值</th></tr><tr><td>低</td><td>VO₂peak ≥15 mL/kg/min <b>且</b> VE/VCO₂ &lt;35</td></tr><tr><td>中</td><td>VO₂peak 12–15 <b>或</b> VE/VCO₂ 35–40</td></tr><tr><td>高</td><td>VO₂peak &lt;12 <b>或</b> VE/VCO₂ slope &gt;40</td></tr></table></div>
 <div class="note"><p>新納入的 <b>VE/VCO₂ slope（通氣效率斜率）</b>原是心臟科評估心衰預後的指標，slope &gt;40 列為手術<b>絕對</b>高風險。Leeds 資料（EJCTS 2024）顯示 slope &gt;40 者 90 天死亡率 15%（vs 6.7%），老年族群更達 21%；該中心實務上比 VO₂peak 更看重此指標。</p></div>
 <h2>重點四：三級風險分層演算法</h2>
-<table><tr><th>風險級別</th><th>大致對應條件</th></tr><tr><td><b>低</b></td><td>無高風險共病、低心血管風險；DLCO ≥80%、ppoFEV1 與 ppoDLCO 均 ≥60%；（必要時）低科技測試達標、CPET VO₂peak ≥15 且 VE/VCO₂ &lt;35</td></tr><tr><td><b>中</b></td><td>DLCO &lt;80% 或 ppo 指標 &lt;60%；低科技測試未達標；CPET 落在中間帶</td></tr><tr><td><b>高</b></td><td>CPET VO₂peak &lt;12 或 VE/VCO₂ slope &gt;40；合併高風險共病</td></tr></table>
+<div class="tablewrap"><table><tr><th>風險級別</th><th>大致對應條件</th></tr><tr><td><b>低</b></td><td>無高風險共病、低心血管風險；DLCO ≥80%、ppoFEV1 與 ppoDLCO 均 ≥60%；（必要時）低科技測試達標、CPET VO₂peak ≥15 且 VE/VCO₂ &lt;35</td></tr><tr><td><b>中</b></td><td>DLCO &lt;80% 或 ppo 指標 &lt;60%；低科技測試未達標；CPET 落在中間帶</td></tr><tr><td><b>高</b></td><td>CPET VO₂peak &lt;12 或 VE/VCO₂ slope &gt;40；合併高風險共病</td></tr></table></div>
 <p>ppo（預估術後）肺功能以<b>肺節計數法</b>計算，解剖異常時可用肺灌流掃描提高準確度。</p>
 <h2>其他重要建議（敘事問題）</h2>
 <ul><li><b>心臟評估融入常規流程</b>：有心血管病史或徵象者應做心臟科評估；高心血管風險與肺動脈高壓列為<b>絕對</b>高風險因子。不建議對所有人常規套用術前心臟風險評分。</li><li><b>衰弱與營養要評估</b>：建議用 Fried 衰弱表型（&gt;60 歲）；治療前評估營養（留意 BMI &lt;18.5、非自願體重下降 ≥10%、&gt;70 歲）。</li><li><b>高風險病人可考慮亞肺葉切除</b>：保留較多肺功能、提升後續治療耐受度。</li><li><b>復健有效</b>：術前復健（含呼吸肌訓練）可將術後重大併發症風險<b>降低約一半</b>並縮短住院（中等確信度）。</li><li><b>年齡不是單一決策因子</b>：須與體能狀態、共病、TNM 分期綜合判斷。</li></ul>

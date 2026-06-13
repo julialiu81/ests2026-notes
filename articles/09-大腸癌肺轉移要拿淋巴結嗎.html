@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -40,12 +42,12 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <p>大腸直腸癌（CRC）若發生肺轉移，對部分病人而言，把肺部轉移灶切乾淨（肺轉移切除術，pulmonary metastasectomy, PM）仍有治癒的機會。但一個長年沒有共識的問題是：<b>切肺轉移灶的同時，要不要順便把縱膈腔的淋巴結也系統性清掉（mediastinal lymph node dissection, MLND）？</b></p>
 <p>支持的人認為，縱膈腔淋巴結若藏有轉移卻沒清，可能是復發來源，清了也能更準確分期；反對的人則認為這會增加手術負擔與併發症，而真正獲益的證據其實薄弱。過去多半是回溯性資料，缺乏前瞻隨機證據，這正是本研究想補上的空白。</p>
 <h2>這項研究怎麼做的？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>開放標籤、第三期、<b>非劣性隨機對照試驗（RCT）</b>（NCT03113318）</td></tr><tr><td>比較兩組</td><td><b>不做 MLND</b> vs <b>系統性 MLND</b>（整塊切除淋巴結與脂肪組織）</td></tr><tr><td>清掃範圍</td><td>右側：2、4、7、8、9、10 站；左側：5、6、7、8、9、10 站</td></tr><tr><td>納入對象</td><td>擬接受 CRC 肺轉移切除（VATS 或開胸）、以治癒為目標的病人</td></tr><tr><td>主要排除</td><td>曾做過 MLND／肺轉移切除、影像可疑縱膈淋巴結、其他部位轉移、原發腫瘤未受控、轉移灶 ≥5 個</td></tr><tr><td>計畫收案</td><td>依 20% 存活差異假設，需 197 人（每組約 100 人）</td></tr><tr><td>實際分析</td><td>95 人隨機分配 → 排除 17 人（最終病理非 CRC）→ <b>可分析 78 人</b>（MLND 41、不做 37）</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>開放標籤、第三期、<b>非劣性隨機對照試驗（RCT）</b>（NCT03113318）</td></tr><tr><td>比較兩組</td><td><b>不做 MLND</b> vs <b>系統性 MLND</b>（整塊切除淋巴結與脂肪組織）</td></tr><tr><td>清掃範圍</td><td>右側：2、4、7、8、9、10 站；左側：5、6、7、8、9、10 站</td></tr><tr><td>納入對象</td><td>擬接受 CRC 肺轉移切除（VATS 或開胸）、以治癒為目標的病人</td></tr><tr><td>主要排除</td><td>曾做過 MLND／肺轉移切除、影像可疑縱膈淋巴結、其他部位轉移、原發腫瘤未受控、轉移灶 ≥5 個</td></tr><tr><td>計畫收案</td><td>依 20% 存活差異假設，需 197 人（每組約 100 人）</td></tr><tr><td>實際分析</td><td>95 人隨機分配 → 排除 17 人（最終病理非 CRC）→ <b>可分析 78 人</b>（MLND 41、不做 37）</td></tr></table></div>
 <div class="note"><p>兩組基準值大致均衡：年齡中位數約 65–67 歲、男性居多，84% 為單一肺轉移灶。</p></div>
 <h2>結果：清出 342 顆，零顆轉移</h2>
 <p>在 41 位接受 MLND 的病人中，平均清掃 5.12 個站別、每人平均摘除 <b>8.34 顆</b>淋巴結，合計 <b>342 顆</b>，而其中<b>沒有任何一顆出現轉移（0／342）</b>。</p>
-<table><tr><th>圍術期指標</th><th>MLND 組</th><th>不做 MLND 組</th><th>p 值</th></tr><tr><td>手術時間（分鐘，中位）</td><td>49（43–59）</td><td>30（26–38）</td><td><b>0.0001</b></td></tr><tr><td>出血量（ml）</td><td>14.5</td><td>1.6</td><td><b>0.0037</b></td></tr><tr><td>引流管多為 1 天</td><td>90%</td><td>100%</td><td>—</td></tr></table>
-<table><tr><th>存活結果（5 年）</th><th>MLND 組</th><th>不做 MLND 組</th><th>差異／p 值</th></tr><tr><td>整體存活（OS）</td><td>75%</td><td>58%</td><td>RMST 差 0.20 年（95% CI −0.26~0.66），p=0.40</td></tr><tr><td>無疾病進展存活（PFS）</td><td>61%</td><td>40%</td><td>RMST 差 0.48 年（95% CI −0.23~1.19），p=0.18</td></tr></table>
+<div class="tablewrap"><table><tr><th>圍術期指標</th><th>MLND 組</th><th>不做 MLND 組</th><th>p 值</th></tr><tr><td>手術時間（分鐘，中位）</td><td>49（43–59）</td><td>30（26–38）</td><td><b>0.0001</b></td></tr><tr><td>出血量（ml）</td><td>14.5</td><td>1.6</td><td><b>0.0037</b></td></tr><tr><td>引流管多為 1 天</td><td>90%</td><td>100%</td><td>—</td></tr></table></div>
+<div class="tablewrap"><table><tr><th>存活結果（5 年）</th><th>MLND 組</th><th>不做 MLND 組</th><th>差異／p 值</th></tr><tr><td>整體存活（OS）</td><td>75%</td><td>58%</td><td>RMST 差 0.20 年（95% CI −0.26~0.66），p=0.40</td></tr><tr><td>無疾病進展存活（PFS）</td><td>61%</td><td>40%</td><td>RMST 差 0.48 年（95% CI −0.23~1.19），p=0.18</td></tr></table></div>
 <div class="note"><p>數字上 MLND 組的 OS／PFS 看起來較高，但<b>未達統計顯著</b>，且試驗最終未收足預計人數，差異無法解讀為治療效益。</p></div>
 <h2>怎麼解讀？臨床意義</h2>
 <p>對「轉移灶少、術前縱膈腔看起來乾淨」的這群病人，本試驗給了相當一致的訊號：<b>常規系統性 MLND 的代價（更長手術、更多出血）明確，但找到轉移的機率極低、也沒換來可證實的存活好處。</b> 因此講者建議，<b>在此族群可不常規施行 MLND</b>。</p>

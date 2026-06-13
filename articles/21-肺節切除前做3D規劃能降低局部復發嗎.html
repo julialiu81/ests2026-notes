@@ -16,6 +16,8 @@ h3{font-size:1.08em;color:#7a1f15;margin-top:1.4em}
 .tldr{background:#fff7f5;border:1px solid #f0cfc8;border-left:5px solid var(--accent);border-radius:8px;padding:14px 18px;margin:1.4em 0;font-size:1.05em}
 .tldr b{color:var(--accent)}
 table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.93em;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.1em 0}
+.tablewrap table{margin:0}
 th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
 th{background:#f0e3df;color:#5a1a10;font-weight:700}
 tr:nth-child(even) td{background:#faf7f6}
@@ -28,7 +30,7 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 .pending{display:inline-block;background:#eef3ee;border:1px dashed #9bbf9b;color:#3a663a;border-radius:6px;padding:2px 10px;font-size:.85em}
 .disclaimer{margin-top:2.4em;padding-top:1em;border-top:1px solid var(--line);font-size:.85em;color:#8893a3}
 .tag{display:inline-block;background:#2c3e50;color:#fff;padding:2px 11px;border-radius:6px;font-size:.82em;margin-right:6px}
-@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}}
+@media(max-width:560px){.wrap{padding:20px 15px 70px}h1{font-size:1.34em}table{font-size:.8em}th,td{padding:6px 7px}}
 </style></head><body>
 <header class="top"><a href="../index.html">← 回 ESTS 2026 學習筆記索引</a></header>
 <div class="wrap">
@@ -39,13 +41,13 @@ blockquote{background:#f4f8fb;border-left:5px solid #2c6fa6;margin:1.2em 0;paddi
 <h2>為什麼會有這個問題？</h2>
 <p>肺節切除後的局部復發是核心挑戰（JCOG0802 十年局部復發約 11%），約 <b>78% 的局部復發發生在術後 2 年內</b>，且與手術切緣距離強相關（切緣 ≥2 cm 預後較佳）。<b>3D 重建軟體</b>做術前規劃，理論上能幫助：理解肺節解剖、精確評估腫瘤學切緣、調整切除計畫。問題是：這樣的系統性 3D 規劃，真的能降低局部復發嗎？</p>
 <h2>研究怎麼做？</h2>
-<table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>多中心回溯世代，法國 EPITHOR 資料庫，2021/01–2022/12</td></tr><tr><td>納入</td><td>9 家法國醫院；8,985 人 → 篩選出 <b>596 例 cT1a-b N0M0 計畫性肺節切除</b></td></tr><tr><td>分組</td><td><b>3D 規劃組 405 vs 標準 2D CT 規劃組 191</b></td></tr><tr><td>主要終點</td><td>2 年局部區域復發率</td></tr></table>
+<div class="tablewrap"><table><tr><th>項目</th><th>內容</th></tr><tr><td>設計</td><td>多中心回溯世代，法國 EPITHOR 資料庫，2021/01–2022/12</td></tr><tr><td>納入</td><td>9 家法國醫院；8,985 人 → 篩選出 <b>596 例 cT1a-b N0M0 計畫性肺節切除</b></td></tr><tr><td>分組</td><td><b>3D 規劃組 405 vs 標準 2D CT 規劃組 191</b></td></tr><tr><td>主要終點</td><td>2 年局部區域復發率</td></tr></table></div>
 <div class="note"><p>兩組大致均衡（年齡約 66 歲、49% 女性、約 78% 有吸菸史），但 ASA 分級有差異（3D 組 ASA 3 較多）。手術 VATS／機械手臂／開胸皆有；節間平面以 ICG 螢光或充氣／放氣法辨識。</p></div>
 <h2>結果</h2>
 <p><b>主要終點（2 年局部區域復發）</b></p>
 <ul><li>2D 組 <b>2.6%</b>（5/191）vs 3D 組 <b>0.5%</b>（2/405），<b>p=0.037</b>；配對後 0.5% vs 0.6%（3D 仍較低）。</li></ul>
 <p><b>3D 組的有利特徵（均達顯著）</b></p>
-<table><tr><th>特徵</th><th>3D 組</th><th>2D 組</th><th>p 值</th></tr><tr><td>腫瘤較大（cT1b 比例）</td><td>78%</td><td>65%</td><td>0.001</td></tr><tr><td>保留肺實質（1–2 個肺節切除比率）</td><td>74%</td><td>59%</td><td>&lt;0.001</td></tr><tr><td>微創入路比例</td><td>90.9%</td><td>52.9%</td><td>&lt;0.001</td></tr><tr><td>轉開胸比例</td><td>1.5%</td><td>7.3%</td><td>&lt;0.001</td></tr><tr><td>術後併發症（Clavien-Dindo）</td><td>相當</td><td>相當</td><td>NS</td></tr></table>
+<div class="tablewrap"><table><tr><th>特徵</th><th>3D 組</th><th>2D 組</th><th>p 值</th></tr><tr><td>腫瘤較大（cT1b 比例）</td><td>78%</td><td>65%</td><td>0.001</td></tr><tr><td>保留肺實質（1–2 個肺節切除比率）</td><td>74%</td><td>59%</td><td>&lt;0.001</td></tr><tr><td>微創入路比例</td><td>90.9%</td><td>52.9%</td><td>&lt;0.001</td></tr><tr><td>轉開胸比例</td><td>1.5%</td><td>7.3%</td><td>&lt;0.001</td></tr><tr><td>術後併發症（Clavien-Dindo）</td><td>相當</td><td>相當</td><td>NS</td></tr></table></div>
 <h2>怎麼解讀？</h2>
 <blockquote>Take-home：系統性術前 3D 規劃使肺節切除的 2 年局部復發率降到 0.5%（配對後 0.6%），低於標準 2D 規劃的 2.6%，且在腫瘤更大、切除肺節數更少的情況下也能達成。其框架是「更佳的術前評估 → 更佳的切緣 → 更低的局部復發」。</blockquote>
 <p>講者也提到，腫瘤大小本身不足以作為選病唯一依據；其他局部復發預測因子包括高術前 SUVmax、切緣 &gt;2 cm、腫瘤與胸膜距離 &lt;5 mm。</p>
